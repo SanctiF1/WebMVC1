@@ -20,8 +20,6 @@ namespace WebMVC1.Controllers
     }
     public class EmployeeController : Controller
     {
-        //
-        // GET: /Test/
 
         public Customer GetCustomer()
         {
