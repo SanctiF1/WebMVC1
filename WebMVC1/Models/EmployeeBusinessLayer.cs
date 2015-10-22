@@ -70,5 +70,12 @@ namespace WebMVC1.Models
         //    employees.Add(emp);
         //    return employees;
         //}
+
+        public void UploadEmployees(List<Employee> employees)
+        {
+            SalesERPDAL salesDal = new SalesERPDAL();
+            salesDal.Employees.AddRange(employees);
+            salesDal.SaveChanges();
+        }
     }
 }
